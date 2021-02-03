@@ -20,6 +20,20 @@ public class Main {
         mapGraph.AddState("Victoria");
         mapGraph.AddState("Tasmania");
 
+        //Make border (connect states together)
+        mapGraph.ConnectState(0,1);
+        mapGraph.ConnectState(0,2);
+        mapGraph.ConnectState(1,2);
+        mapGraph.ConnectState(1,3);
+        mapGraph.ConnectState(2,3);
+        mapGraph.ConnectState(2,4);
+        mapGraph.ConnectState(2,5);
+        mapGraph.ConnectState(3,4);
+        mapGraph.ConnectState(4,5);
+
+        //RUN
+        mapGraph.doColoring();
+
 
 
 
